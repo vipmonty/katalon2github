@@ -17,7 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.google.com')
+WebUI.openBrowser('www.uvu.edu')
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Object Repository/uvu objects/Page_Utah Valley University  Utah Valley University/a_myUVU'))
 
+WebUI.click(findTestObject('Object Repository/uvu objects/Page_Welcome to myUVU  myUVU/a_WorkplaceStudent Sign In'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Object Repository/uvu objects/Page_Sign in to your account/input_Sign in_loginfmt'), 'dog')
